@@ -1,0 +1,88 @@
+@import "../../node_modules/bulma/bulma";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.25rem;
+  font-family: 'Lato';
+}
+
+.layout {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  background: url('../assets/Solo_SD.png');
+  background-size: cover;
+}
+
+.horaro-ticker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1920px;
+  height: 55px;
+  /*max-height: 55px;*/
+  overflow-x: scroll;
+  /*background: #777;*/
+}
+
+.ticker__entry {
+  min-width: 340px;
+  display: inline-block;
+  padding: 0 0.4rem;
+  color: #f7f7f7;
+  margin: 3px 0;
+  line-height: 1.2em;
+  text-shadow: 0.02em 0.04em 0.5em #000;
+}
+
+.ticker-entry__separator {
+  width: 0;
+  margin-left: 12px;
+  height: 47px;
+  /*border-right: 4px solid #c13ef7;*/
+  border-right: 4px solid #000;
+  /*box-shadow: 0 0 1em 2px #a735d6;*/
+}
+
+.ticker-entry__section {
+  display: inline-block;
+  height: 47px;
+  margin: 0 4px 0 0;
+}
+
+.ticker-entry__section--leader {
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.ticker-entry__section--leader:empty {
+  margin: 0;
+}
+
+.ticker-entry__icon {
+  margin-left: 1ch;
+}
+
+.ticker-entry__section--centered {
+  vertical-align: middle;
+}
+
+.ticker-entry__game {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.ticker-entry__category {
+  font-size: 0.9em;
+}
+
+.ticker-entry__runners {
+  font-size: 0.9em;
+}
+
+.ticker-entry__start-time {
+  font-size: 0.8em;
+}
